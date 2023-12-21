@@ -25,6 +25,30 @@ console.log(calculateGrade(30)); // Output: E
 Note
 Marks must be numerical values between 0 and 100.
 The script is designed to handle invalid inputs gracefully, providing an error message.
-Feel free to integrate this script into your projects or modify it according to your needs. If you have any questions or suggestions, please feel free to reach out. Happy coding!
+Feel free to integrate this script into your projects or modify it according to your needs. If you have any questions or suggestions, please feel free to reach out. 
+
 //second challenge: speedDetector
+Speed Detector
+This JavaScript script serves as a speed detector, determining whether a vehicle is within the speed limit or if demerit points should be assigned based on exceeding the limit.
+
+Function
+speedDetector(speed)
+This function takes the speed of a vehicle as an argument and evaluates whether it is within the speed limit. If the speed exceeds the limit, the function calculates demerit points and checks if they exceed the license suspension threshold.
+
+Usage
+To use the script, call the speedDetector function and pass the vehicle's speed as an argument. The script will output either "Ok" if the speed is within the limit or provide the demerit points if the speed exceeds the limit.
+
+javascript
+Copy code
+console.log(speedDetector(60)); // Output: Ok
+console.log(speedDetector(75)); // Output: Points: 1
+console.log(speedDetector(90)); // Output: Points: 4
+console.log(speedDetector(120)); // Output: License suspended
+Note
+The script assumes a default speed limit of 70.
+Demerit points are calculated based on exceeding the speed limit, with one point assigned for every 5 km/h over the limit.
+If demerit points exceed 12, the script indicates "License suspended."
+The script is designed to handle invalid inputs gracefully.
+Feel free to integrate this script into your projects or modify it according to your needs. If you have any questions or suggestions, please feel free to reach out. Safe driving!
+
 //thirs challenge: net salary
