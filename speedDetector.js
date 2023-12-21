@@ -8,14 +8,14 @@ function speedDetector(speed){
         return("Ok");
         // Step 4: Calculate demerit points for exceeding the speed limit
     } else { 
-        const demeritPoints = Math.round((speed - speedLimit) / 5); 
+        const demeritPoints = Math.floor((speed - speedLimit) / 5); 
         if (demeritPoints > 12) {       // Step 5: Check if demerit points exceed 12 (license suspension threshold)
-            return ("License suspended");
+            return( "Demerits points:" + demeritPoints + "." + "License suspended.");
             } else {
                 return ("Points: " + demeritPoints); // Step 6: Print the total demerit points
             }
     }
     }
-console.log(speedDetector(90))
+console.log(speedDetector(300))
 
 
